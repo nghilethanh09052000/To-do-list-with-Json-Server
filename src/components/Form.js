@@ -12,10 +12,6 @@ const Form = ({inputText,setInputText,todos,setTodos}) => {
         .then(()=>{
             console.log('nghi2')
         })
-        setTodos([
-            ...todos,
-            newTodos
-        ])
     }
     return ( 
         <div>
@@ -26,11 +22,6 @@ const Form = ({inputText,setInputText,todos,setTodos}) => {
             placeholder="Enter todo"
             />
          <button onClick={handleSubmit} >Submit</button>
-         <ul>
-             {todos.map( (todo) =>(
-                 <li key={todo.id} >{todo.name} - {todo.id} </li>
-             ))}
-         </ul>
         </div>
         
      );
