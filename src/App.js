@@ -2,7 +2,7 @@ import Header from './pages/Header'
 import Home from './pages/Home'
 import Create from './pages/Create'
 import Error from './pages/404'
-import Form from './components/Form'
+
 // import Todo from './components/Todo'
 
 import {BrowserRouter as Router, Route , Routes} from 'react-router-dom'
@@ -19,6 +19,7 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/create" element={<Create/>}/>
                 <Route path="*" element={<Error/>}/>
+        
             </Routes>
         </div>
       </div>

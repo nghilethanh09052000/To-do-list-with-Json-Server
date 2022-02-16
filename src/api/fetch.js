@@ -27,7 +27,7 @@ const useFetch = (url) =>{
            
             })
             return () => controller.abort();
-    },[url])
+    },[url]);
     return {data,isPending,error}
 }
 export default useFetch;
