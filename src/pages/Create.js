@@ -1,15 +1,34 @@
-import {Link} from 'react-router-dom'
-import {FcPlus} from 'react-icons/fc'
+import { useState } from 'react';
+import {useNavigate} from 'react-router-dom'
 
 const Create = () => {
-    const style ={fontSize: "2.5em" }
+    const [inputText , setinputText] = useState('');
+    const navigate = useNavigate();
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        const todo = {todo: inputText}
+        fetch('http://localhost:8000/todos',{
+            method:'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(todo)
+        })
+        .then( ()=>{
+            console.log('New todo add')
+        })
+        navigate('/')
+    }
     return ( 
         <div className='Create'>
-            <Link to='/create'>
-                <FcPlus
-                    style={style}
+           <h2>Add a new todo</h2>
+           <form onSubmit={handleSubmit}>
+               <input
+                    onChange={(e) => setinputText(e.target.value)} 
+                    placeholder='Add a new todo'
                 />
-            </Link>
+                <button>
+                    <i className="fas fa-plus"></i>
+                </button>
+           </form>
         </div>
        
            

@@ -17,10 +17,9 @@ function App() {
         <div className='content'>
           <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/create" element={<Form/>}/>
+                <Route path="/create" element={<Create/>}/>
                 <Route path="*" element={<Error/>}/>
-          </Routes>
-          <Create/>
+            </Routes>
         </div>
       </div>
     </Router>
