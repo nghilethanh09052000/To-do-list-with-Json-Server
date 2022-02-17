@@ -72,6 +72,8 @@ header a{
 }
 .todoList ul{
   text-decoration: none;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .todoList .todo{
@@ -96,5 +98,19 @@ header a{
   font-size: 1rem;
 }
 
-
+.Delete{
+  width:500px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Delete button{
+  color:red;
+  background-color: black;
+  border-radius: 5px;
+  height: 50px;
+  width: 50%;
+  font-size: large;
+  cursor: pointer;
+}
 

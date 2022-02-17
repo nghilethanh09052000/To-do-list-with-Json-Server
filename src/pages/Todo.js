@@ -1,37 +1,29 @@
-import {useNavigate} from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
+import { useEffect} from "react";
 
-
-const Todo = ({todos}) => {
+const Todo = ({todo}) => {
     const navigate = useNavigate();
 
     const handleDelete = () =>{
-        todos.map((todo)=>(
-            fetch('http://localhost:8000/todos/'+todo.id,{
+        fetch('http://localhost:8000/todos/'+todo.id,{
                 method:'delete'
             })
             .then(()=>{
-                console.log('Delete');
+                navigate('/delete')
             })
-        ))
-        navigate('/')
-    }
+        }
     return ( 
-     
-        <div className="todoList">
-           {console.log('nghi')}
-            <ul>
-                {todos.map( (todo) =>(
-                    <div className="todo" key={todo.id}>
-                        <li>{todo.todo}</li>
-                        <button className="complete-btn">
-                            <i className="fas fa-book"></i>
-                        </button>
-                        <button onClick={handleDelete} className="trash-btn">
-                            <i className="fas fa-trash"></i>
-                        </button>
-                    </div>
-                ))}
-            </ul>
+     <div className="todoList">
+           <div className="todo">
+                <li>{todo.todo}</li>
+                <button className="complete-btn">
+                    <i className="fas fa-book"></i>
+                </button>
+                <button onClick={handleDelete} className="trash-btn">
+                    <i className="fas fa-trash"></i>
+                </button>
+            </div>
+      
         </div>
      );
 }

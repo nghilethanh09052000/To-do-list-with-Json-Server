@@ -13,9 +13,9 @@ const Create = () => {
             body: JSON.stringify(todo)
         })
         .then( ()=>{
-            console.log('New todo add')
+            navigate('/')
         })
-        navigate('/')
+        
     }
     return ( 
         <div className='Create'>
