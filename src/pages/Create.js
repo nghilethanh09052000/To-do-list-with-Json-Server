@@ -6,7 +6,7 @@ const Create = () => {
     const navigate = useNavigate();
     const handleSubmit = (e) =>{
         e.preventDefault();
-        const todo = {todo: inputText}
+        const todo = {todo: inputText,status:'Doing'}
         fetch('http://localhost:8000/todos',{
             method:'POST',
             headers: { "Content-Type": "application/json" },

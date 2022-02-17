@@ -2,7 +2,7 @@
 <p>1. Clone this github respository</p>
 <p>2. Download node in: https://nodejs.org/en/</p>
 <p>3. Open your terminal to the folder location, type: npm install</p>
-<p>4. Run npm start</p>
+<p>4. Run npm run start</p>
 <p>5. Run json server: npx json-server --watch data/todos.json --port 8000</p>
 <h1>Technologies used in this project</h1>
 <p>Reactjs, javascript, html, css, hook</p>

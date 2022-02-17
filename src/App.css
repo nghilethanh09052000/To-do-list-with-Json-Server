@@ -70,7 +70,7 @@ header a{
 .Create form button:hover{
   background: #721ce3;
 }
-.todoList ul{
+ul{
   text-decoration: none;
   overflow: hidden;
   word-wrap: break-word;

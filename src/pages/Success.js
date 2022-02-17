@@ -1,6 +1,6 @@
 import {useNavigate} from 'react-router-dom'
-import { useRef ,createRef , useEffect} from 'react'
-const Delete = () => {
+import { useRef , useEffect} from 'react'
+const Success = () => {
     const navigate = useNavigate()
     const buttonClick = useRef()
 
@@ -19,10 +19,10 @@ const Delete = () => {
                 ref={buttonClick}
                 onClick={handleDelete}
             >
-                Delete Successfully
+                Successfully
             </button>
         </div>
     );
 }
  
-export default Delete;
+export default Success;

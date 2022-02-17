@@ -9,12 +9,16 @@ const Home = () => {
             return res.json()
         })
         .then(data=>{
-            setTodos(data)
+            setTodos(data.filter((item)=> item.status ==='Doing' ))
         })
     },[])
     return ( 
         <div className="Home">
             <h1>Your To Do List</h1>
+            <select name="" id="">
+                <option value="">Doing</option>
+                <option value="">Done</option>
+            </select>
             <ul>
             {todos && 
             todos.map((todo)=>(
