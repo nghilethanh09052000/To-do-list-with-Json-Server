@@ -1,5 +1,14 @@
 {
   "todos": [
-    
+    {
+      "todo": "clean house",
+      "status": "Done",
+      "id": 2
+    },
+    {
+      "todo": "gardening flower",
+      "status": "Doing",
+      "id": 3
+    }
   ]
 }
