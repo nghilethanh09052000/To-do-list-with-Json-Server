@@ -7,7 +7,6 @@
 <h1>Technologies used in this project</h1>
 <p>Reactjs, Jsonserver, javascript, html, css, hook</p>
 <h1>Screenshot from the app</h1>
-![Capture](https://user-images.githubusercontent.com/86466679/154636465-793b7925-c821-40ef-9d1d-e97d22f10eb4.PNG)
-#
-![Capture1](https://user-images.githubusercontent.com/86466679/154636481-cc3e56bc-f7f9-4e19-9c3e-2e9ee4e85d70.PNG)
+<img src="./public/image.PNG">
+<img src="./public/Capture1.PNG">
 
