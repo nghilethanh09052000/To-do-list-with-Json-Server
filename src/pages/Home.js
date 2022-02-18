@@ -18,11 +18,15 @@ const Home = () => {
     },[status])
     return ( 
         <div className="Home">
-            <h1>Your To Do List</h1>
-            <select name="todos" onChange={handleStatus} >
-                <option value="Doing">Doing</option>
-                <option value="Done">Done</option>
-            </select>
+            <div className="header2">
+                <h2>Your To Do List</h2>
+                <div className="select">
+                    <select name="todos" onChange={handleStatus} >
+                        <option value="Doing">Doing</option>
+                        <option value="Done">Done</option>
+                    </select>
+                </div>
+            </div>
             <ul>
             {todos && 
             todos.map((todo)=>(

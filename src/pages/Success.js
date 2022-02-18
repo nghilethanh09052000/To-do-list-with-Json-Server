@@ -13,7 +13,7 @@ const Success = () => {
         
         <div className='Delete'>
         {console.log('nghi')}
-            <button>Successfully</button>
+            <h1>Successfully</h1>
         </div>
     );
 }

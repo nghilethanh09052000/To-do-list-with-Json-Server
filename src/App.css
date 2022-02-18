@@ -17,7 +17,7 @@ header{
 }
 
 header a{
-  color:red;
+  color:green;
   text-decoration: none;
   font-weight: 600;
   font-size: 50px;
@@ -26,9 +26,58 @@ header a{
 
 .content{
   background-color: rgb(245, 245, 227);
-  height: 500px;
+  height: 600px;
   width:500px;
+
+}
+
+.header2{
+  display: flex;
+  justify-content: space-between;
+
+}
+.Home .header2 h2{
+  margin: auto auto;
+  color: red;
+}
+
+.Home select{
+  padding:1rem;
+  border-radius: 5px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  margin: 1rem;
   position: relative;
+  overflow: hidden;
+}
+.Home select {
+  color: #ff6f47;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
 }
 
 .Create h2{
@@ -71,9 +120,11 @@ header a{
   background: #721ce3;
 }
 ul{
-  text-decoration: none;
+
   overflow: hidden;
   word-wrap: break-word;
+  cursor: default;
+  max-height: 600px;
 }
 
 .todoList .todo{
@@ -89,28 +140,22 @@ ul{
   text-transform: capitalize;
 }
 
+.todoList .todo li{
+  max-width: 250px;
+  color:#ff6f47 ;
+}
+
 .complete-btn, .trash-btn{
-  background: #ff6f47;
+  background-color: #ff6f47;
   color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  margin: 20px;
 }
 
-.Delete{
-  width:500px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.Delete button{
-  color:red;
-  background-color: black;
-  border-radius: 5px;
-  height: 50px;
-  width: 50%;
-  font-size: large;
-  cursor: pointer;
-}
+ .Delete h1{
+   color: red;
+ }
 

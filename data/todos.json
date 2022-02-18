@@ -1,14 +1,34 @@
 {
   "todos": [
     {
-      "todo": "clean house",
-      "status": "Done",
+      "todo": "Sweep the house",
+      "status": "Doing",
+      "id": 1
+    },
+    {
+      "todo": "Clean the house",
+      "status": "Doing",
       "id": 2
     },
     {
-      "todo": "gardening flower",
+      "todo": "Gardening",
       "status": "Doing",
       "id": 3
+    },
+    {
+      "todo": "Studying",
+      "status": "Doing",
+      "id": 4
+    },
+    {
+      "todo": "Listening",
+      "status": "Done",
+      "id": 5
+    },
+    {
+      "todo": "Take shower",
+      "status": "Done",
+      "id": 6
     }
   ]
 }

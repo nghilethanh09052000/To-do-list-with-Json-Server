@@ -6,7 +6,7 @@ const Header = () => {
     return (  
         <header>
             <Link to='/'>
-                To Do List
+                Welcome
             </Link>
             <Link to='/create'>
                 <FcPlus

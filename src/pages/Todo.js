@@ -28,14 +28,16 @@ const Todo = ({todo}) => {
      <div className="todoList">
            <div className="todo">
                 <li>{todo.todo}</li>
-                { todo.status ==="Doing" &&
-                <button onClick={handleUpdate} className="complete-btn">
-                    <i className="fas fa-book"></i>
+                <div className='button'>
+                    { todo.status ==="Doing" &&
+                    <button onClick={handleUpdate} className="complete-btn">
+                        <i className="fas fa-book"></i>
+                    </button>
+                    }
+                    <button onClick={handleDelete} className="trash-btn">
+                        <i className="fas fa-trash"></i>
                 </button>
-                }
-                <button onClick={handleDelete} className="trash-btn">
-                    <i className="fas fa-trash"></i>
-                </button>
+                </div>
             </div>
       
         </div>
